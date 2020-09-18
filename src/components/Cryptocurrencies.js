@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Cryptocurrency from './Cryptocurrency'
 import axios from 'axios'
 
 const Cryptocurrencies = () => {
@@ -6,7 +7,7 @@ const Cryptocurrencies = () => {
     const [load, setLoad] = useState(false)
 
     useEffect(() => {
-        axios.get('https://api.coingecko.com/api/v3/coins/list')
+        axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
             .then(res => {
                 setCoins(res.data)
                 setLoad(true)
@@ -22,7 +23,7 @@ const Cryptocurrencies = () => {
         <div className='Cryptocurrencies'>
             <ul>
                 { load ? (
-                    coins.map((coin, index) => <li> {coin.id} </li>) 
+                    <Cryptocurrency coins={coins}/>
                 ) : (
                     <h1>Loading...</h1>
                 )}
