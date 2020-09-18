@@ -1,0 +1,20 @@
+
+.Cryptocurrency {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.Cryptocurrency .coin {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0.5rem;
+    width: 250px;
+}
+
+.Cryptocurrency .name {
+    font-size: 20px;
+}

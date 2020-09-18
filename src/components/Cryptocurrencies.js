@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Cryptocurrency from './Cryptocurrency'
+import '../styles/Cryptocurrencies.css'
 import axios from 'axios'
 
 const Cryptocurrencies = () => {
@@ -21,13 +22,11 @@ const Cryptocurrencies = () => {
 
     return (
         <div className='Cryptocurrencies'>
-            <ul>
                 { load ? (
                     <Cryptocurrency coins={coins}/>
                 ) : (
                     <h1>Loading...</h1>
                 )}
-            </ul>
         </div>
     )
 }
