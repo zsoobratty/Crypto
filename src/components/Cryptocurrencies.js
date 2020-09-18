@@ -22,6 +22,7 @@ const Cryptocurrencies = () => {
 
     return (
         <div className='Cryptocurrencies'>
+            <h1>Top 100 Crypto Coins</h1>
                 { load ? (
                     <Cryptocurrency coins={coins}/>
                 ) : (
