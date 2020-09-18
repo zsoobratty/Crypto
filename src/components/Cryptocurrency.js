@@ -10,8 +10,8 @@ const Cryptocurrency = ({coins}) => {
                     <img className='image' src={coin.image} alt={coin.name}/>
                     <div className="information">
                         <p className="current-price">Current price: ${coin.current_price}</p>
-                        <p className="24hlow">24 Hour Low: ${coin.low_24h}</p>
-                        <p className="24hhigh">24 Hour High: ${coin.high_24h}</p>
+                        <p className="coin24hhigh">24H High: ${coin.high_24h}</p>
+                        <p className="coin24hlow">24H Low: ${coin.low_24h}</p>
                     </div>
                 </div>
             )}

@@ -19,7 +19,7 @@
     padding-right: 10px;
     margin: 0.5rem;
     width: 250px;
-    height: 300px;
+    height: 320px;
     overflow: hidden;
 }
 
@@ -27,6 +27,7 @@ img {
     width: 100px;
     height: 100px;
     padding: 5px;
+    margin-top: 5px;
     box-shadow: 2px 2px 2px 2px #7392b7;
 }
 
@@ -35,11 +36,22 @@ img {
     font-size: 20px;
     margin: 0;
     margin-top: 10px;
+    color: #ff4365;
 }
 
 .current-price {
-    font-size: 18px
+    font-size: 18px;
+    color: #2d3047;
 }
+
+.coin24hlow {
+    color: #9c0d38;
+}
+
+.coin24hhigh {
+    color: #0a8754;
+}
+
 
 .information {
     position: absolute;
