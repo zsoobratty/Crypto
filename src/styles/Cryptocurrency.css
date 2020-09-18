@@ -1,20 +1,39 @@
-
 .Cryptocurrency {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.Cryptocurrency .coin {
-    border: 1px solid grey;
+.coin {
+    background-color: #c5d5ea;
+    border: 2px solid #7392b7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0.5rem;
     width: 250px;
+    height: 300px;
+    overflow: hidden;
 }
 
-.Cryptocurrency .name {
-    font-size: 20px;
+img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.name {
+    font-size: 15px;
+}
+
+.information {
+    position: absolute;
+    bottom: 0;
 }

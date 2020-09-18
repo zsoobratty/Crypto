@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+    background-color: #b3c5d7;
+    margin: 0;
+    padding: 0;
+}
+
 .Cryptocurrencies {
     font-family: 'Poppins', sans-serif;
+
 }
